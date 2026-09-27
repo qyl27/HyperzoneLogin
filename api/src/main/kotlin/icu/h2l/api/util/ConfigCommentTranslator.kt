@@ -35,5 +35,10 @@ fun interface ConfigCommentTranslator {
      * @return 翻译结果；若键不存在则返回 null（保留原始键）
      */
     fun translate(key: String): String?
+
+    /**
+     * 重载翻译资源。
+     */
+    fun reload()
 }
 
